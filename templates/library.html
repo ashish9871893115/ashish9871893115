@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<title>Django Contact Form</title>
+</head>  
+<body>  
+<form method="POST" action="#">  
+{% csrf_token %}  
+<div class="container">  
+<div >
+	<label for="fullname" >Full Name</label>
+	<div >
+	<input type="text" name="fullname" value=""/>
+	</div>
+</div> 
+<div >
+	<label for="email" ">Email</label>
+	<div>
+	<input type="text" name="email" value=""/>
+	</div>
+</div> 
+<div >
+	<label for="contact">Contact</label>
+	<div>
+	<input type="text" name="contact" value=""/>
+	</div>
+</div> 
+<div >
+	<label for="message">Message</label>
+	<div >
+	<input type="text" name="message" value=""/>
+	</div>
+</div> 
+<div>
+<button type="submit" >Submit</button> 
+</div>
+</div> 
+</form>  
+</body>  
+</html> 

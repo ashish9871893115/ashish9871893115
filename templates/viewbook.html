@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+    <br>
+    <br>
+    <h3 >Available Book in Library</h3>
+{% if books%}
+<div>
+    <br>
+    <br>
+      {% for book in books %}
+        <tr>
+          Book Name : <td>{{book.name}}</td><br>
+          Author : <td>{{book.author}}</td><br>
+          Category : <td>{{book.category}}</td><br>
+          <br><br><br><br>
+        </tr>
+      {% endfor %}
+    </tbody>
+    </table>
+</div>
+{% else %}
+<h1>Have 0 book</h1>
+{%endif%}
+
+
+<br><br><br><br><br><br><br><br><br>
+  </body>
+</html>
